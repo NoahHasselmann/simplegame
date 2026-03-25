@@ -17,6 +17,8 @@ int main()
         if (!scanf("%d", &number))
         {
             printf("That is not a number!\n");
+            int c;
+            while ((c = getchar()) != '\n' && c != EOF);
             continue;
         }
         
@@ -37,5 +39,6 @@ int main()
         }
     }
     
+    system("pause");
     return 0;
 }
